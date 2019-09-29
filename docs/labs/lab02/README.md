@@ -49,7 +49,7 @@ Red Hat OpenShift is one of the leading container management platforms available
 
 1. From your main project page, click **Add and then Import YAML**.
 
-1. Paste the **Red Hat Fuse 7.0 Camel with Spring Boot** template.
+1. Paste the content of the **Red Hat Fuse 7.0 Camel with Spring Boot** template from **https://github.com/YOUR_REPO/bbva-api-management/blob/master/locations-api-template.json**
 
 1. Click the **Create >** button.
 
