@@ -41,7 +41,7 @@ Red Hat OpenShift is one of the leading container management platforms available
 1. Fill in the configuration information with your API implementation github repo details:
 
     * Application Name: **location-service**
-    * Git Repository URL: **https://github.com/mgbarbero/3scale-api-workshop**
+    * Git Repository URL: **https://github.com/TU_REPO/3scale-api-workshop**
     * Git Repository context: **/projects/location-service**
     * Git Reference: **master**
 
