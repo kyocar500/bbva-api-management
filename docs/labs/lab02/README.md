@@ -60,10 +60,7 @@ Red Hat OpenShift is one of the leading container management platforms available
     * Git Repository context: **/projects/location-service**
     * Git Reference: **master**
     
-The command you must run is: 
-
-**oc new-app --template=s2i-fuse70-spring-boot-camel -p APP_NAME=location-service -p GIT_REPO=https://github.com/YOUR_REPO/3scale-api-workshop -p CONTEXT_DIR=/projects/location-service -p GIT_REF=master**
-
+1. The command you must run is:   **oc new-app --template=s2i-fuse70-spring-boot-camel -p APP_NAME=location-service -p GIT_REPO=https://github.com/YOUR_REPO/3scale-api-workshop -p CONTEXT_DIR=/projects/location-service -p GIT_REF=master**
 
 1. Your service will be provisioned in a moment.
 
