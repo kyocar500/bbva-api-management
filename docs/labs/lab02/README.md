@@ -64,11 +64,7 @@ Red Hat OpenShift is one of the leading container management platforms available
 
 1. Your service will be provisioned in a moment.
 
-1. You should now see the blue circle in the *location-service* pod. 
-
-    ![12-running-pod](images/deploy-12.png)
-
-### Step 3: Test Location API Service
+### Step 2: Test Location API Service
 
 We now have a working Location API Service implementation listening for requests. We will use an online cURL tool to test it.
 
@@ -81,10 +77,8 @@ We now have a working Location API Service implementation listening for requests
 1. Enter the following URL: 
 
     ```bash
-    http://location-service-userX.apps.GUID.openshiftworkshop.com/locations/1
+    http://YOUR_LOCATION_SERVICE_ROUTE/locations/1
     ```
-
-    Remember to replace the GUID with your [environment](#environment) values and your user number. It should look like this:
 
 1. Click the **START YOUR CURL** button.
 
@@ -103,8 +97,6 @@ Sometimes, something more complex could be making your deployment fail. You can 
 ## Summary
 
 In this lab you were able to launch a new software service which implements and API and manage it using the OpenShift platform. Subsequently you were able to call the API to see if it was really deployed and accessible in the right place.  
-
-You can now proceed to [Lab 3](../lab03/#lab-3)
 
 ## Notes and Further Reading
 
