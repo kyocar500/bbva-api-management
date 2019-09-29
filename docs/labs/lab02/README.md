@@ -26,7 +26,7 @@ Red Hat OpenShift is one of the leading container management platforms available
 
 1. Create a free account
 
-1. Log into OpenShift using your designated [user and password](#environment). Click on **Sign In**.
+1. Log into OpenShift using your user and password. Click on **Sign In**.
 
     ![01-login](images/deploy-01.png "OpenShift Login")
 
