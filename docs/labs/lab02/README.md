@@ -32,6 +32,21 @@ Red Hat OpenShift is one of the leading container management platforms available
 
 1. You are now in OpenShift's main page. Create a project
 
+1. Deploy the MySQL database
+
+1. From your main project page, click **Add and then Deploy Image**.
+
+1. The image name you should deploy is **registry.access.redhat.com/rhscl/mysql-57-rhel7**.
+
+1. Fill the following env vars for the database
+
+    * MYSQL_USER: **dbuser**
+    * MYSQL_PASSWORD: **password**
+    * MYSQL_DATABASE: **sampledb**
+    * MYSQL_ROOT_PASSWORD: **password**
+
+1. Deploy the locations service
+
 1. From your main project page, click **Add and then Import YAML**.
 
 1. Paste the **Red Hat Fuse 7.0 Camel with Spring Boot** template.
@@ -46,41 +61,11 @@ Red Hat OpenShift is one of the leading container management platforms available
     * Git Reference: **master**
     
 The command you must run is: 
+
 **oc new-app --template=s2i-fuse70-spring-boot-camel -p APP_NAME=location-service -p GIT_REPO=https://github.com/YOUR_REPO/3scale-api-workshop -p CONTEXT_DIR=/projects/location-service -p GIT_REF=master**
 
 
 1. Your service will be provisioned in a moment.
-
-    ![08-template-results](images/deploy-08.png "Results")
-
-### Step 2: Configure External Resources
-
-Did you notice your deployment is failing? This is because your API requires information on the database host and port to connect. Let's fix this problem.
-
-There are several ways to provision information of the environment to your OpenShift deployment. Most of the times you will use a combination of [Config Maps](https://docs.openshift.com/container-platform/latest/dev_guide/configmaps.html), [Environment Variables](https://docs.openshift.com/container-platform/latest/dev_guide/environment_variables.html) and, [Secrets](https://docs.openshift.com/container-platform/latest/dev_guide/secrets.html). 
-
-In this lab we will use Environment Variables.
-
-1. From your overview page, click the **location-service** link to access the deployment configuration.
-
-    ![09-deployment-config](images/deploy-09.png)
-
-1. In the deployment configuration page, change to the **Environment** tab. Here click the **Add Value** link *twice* to get two (2) new rows.
-
-    ![10-environment](images/deploy-10.png)
-
-1. Fill in with the following information regarding the location of the International Inc Database.
-
-    * Name: **MYSQL\_SERVICE\_HOST**
-    * Value: **mysql.international.svc**
-    * Name: **MYSQL\_SERVICE\_PORT**
-    * Value: **3306**
-
-    ![11-environment-variables](images/deploy-11.png)
-
-1. Click **Save** to update the configuration and redeploy the service.
-
-1. Go back to the **Overview** page to monitor your updated deployment.
 
 1. You should now see the blue circle in the *location-service* pod. 
 
