@@ -32,8 +32,6 @@ Red Hat OpenShift is one of the leading container management platforms available
 
 1. You are now in OpenShift's main page. Create a project
 
-    ![02-user-project](images/deploy-02.png "User Project")
-
 1. From your main project page, click **Add and then Import YAML**.
 
 1. Paste the **Red Hat Fuse 7.0 Camel with Spring Boot** template.
