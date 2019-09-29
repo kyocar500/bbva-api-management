@@ -41,19 +41,15 @@ Red Hat OpenShift is one of the leading container management platforms available
 1. Fill in the configuration information with your API implementation github repo details:
 
     * Application Name: **location-service**
-    * Git Repository URL: **https://github.com/TU_REPO/3scale-api-workshop**
+    * Git Repository URL: **https://github.com/YOUR_REPO/3scale-api-workshop**
     * Git Repository context: **/projects/location-service**
     * Git Reference: **master**
+    
+The command you must run is: 
+**oc new-app --template=s2i-fuse70-spring-boot-camel -p APP_NAME=location-service -p GIT_REPO=https://github.com/YOUR_REPO/3scale-api-workshop -p CONTEXT_DIR=/projects/location-service -p GIT_REF=master**
 
-    ![06-template-configuration](images/deploy-06.png "Configuration")
 
-1. Click **Next >**.
-  
-1. In this moment we will not create any bindings. So click **Create**.
-
-    ![07-template-binding](images/deploy-07.png "Binding")
-
-1. Your service will be provisioned in a moment. Click the **Continue to the project overview** and then click the **Close** button.
+1. Your service will be provisioned in a moment.
 
     ![08-template-results](images/deploy-08.png "Results")
 
