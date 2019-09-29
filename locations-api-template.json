@@ -20,20 +20,20 @@
       "name": "APP_NAME",
       "displayName": "Application Name",
       "required": true,
-      "value": "location-service",
+      "value": "myservice",
       "description": "The name assigned to the application."
     },
     {
       "name": "GIT_REPO",
       "displayName": "Git Repository URL",
       "required": true,
-      "value": "https://github.com/mgbarbero/3scale-api-workshop",
+      "value": "https://github.com/fake",
       "description": "The URL of the repository with your application source code."
     },
     {
       "name": "CONTEXT_DIR",
       "displayName": "Git Repository context",
-      "value": "/projects/location-service",
+      "value": "/",
       "description": "Path within Git project to build; empty for root project directory."
     },
     {
