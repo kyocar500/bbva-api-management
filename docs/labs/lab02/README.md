@@ -4,7 +4,6 @@
 
 ### Deploying APIs to OpenShift
 
-* Duration: 15 mins
 * Audience: Developers, Architects, System Administrators, Operators
 
 ## Overview
@@ -15,46 +14,6 @@ The code which implements any of the APIs in your organization is part of it's s
 
 Red Hat OpenShift is one of the leading container management platforms available in the market. It is based on the highly popular Kubernetes Open Source project which Red Hat is a leading contributor to. 
 
-### Skipping The Lab
-
-If you are planning to follow to the next lab, there is an already deployed and running Location API Service in this endpoint:
-
-```bash
-http://location-service-international.apps.GUID.openshiftworkshop.com
-```
-
-### Environment
-
-**URLs:**
-
-Check with your instruction the *GUID* number of your current workshop environment. Replace the actual number on all the URLs where you find **GUID**. 
-
-Example in case of *GUID* = **1234**: 
-
-```bash
-https://master.GUID.openshiftworkshop.com
-```
-
-becomes =>
-
-```bash
-https://master.1234.openshiftworkshop.com
-```
-
-**Credentials:**
-
-Your username is your asigned user number. For example, if you are assigned user number **1**, your username is: 
-
-```bash
-user1
-```
-
-The password to login is always the same:
-
-```bash
-openshift
-```
-
 ## Lab Instructions
 
 ### Step 1: Deploying Fuse-based APIs
@@ -62,39 +21,29 @@ openshift
 1. Open a browser window and navigate to:
 
     ```bash
-    https://master.GUID.openshiftworkshop.com/console
+    www.openshift.com
     ```
 
-    *Remember to replace the GUID with your [environment](#environment) value and your user number.*
-
-1. Accept the self-signed certificate if you haven't.
-
-    ![selfsigned-cert](images/00-selfsigned-cert.png "Self-Signed Cert")
+1. Create a free account
 
 1. Log into OpenShift using your designated [user and password](#environment). Click on **Sign In**.
 
     ![01-login](images/deploy-01.png "OpenShift Login")
 
-1. You are now in OpenShift's main page. Click on your **userX** project in the right side of the screen.
+1. You are now in OpenShift's main page. Create a project
 
     ![02-user-project](images/deploy-02.png "User Project")
 
-1. From your main project page, click **Browse Catalog**.
+1. From your main project page, click **Add and then Import YAML**.
 
-    ![03-browse-catalog](images/deploy-03.png "Catalog")
+1. Paste the **Red Hat Fuse 7.0 Camel with Spring Boot** template.
 
-1. Scroll down the page and search for the **Red Hat Fuse 7.0 Camel with Spring Boot** template. Click on the link.
-
-    ![04-Fuse70-template](images/deploy-04.png "Template")
-
-1. Click the **Next >** button.
-
-    ![05-template-information](images/deploy-05.png "Information")
+1. Click the **Create >** button.
 
 1. Fill in the configuration information with your API implementation github repo details:
 
     * Application Name: **location-service**
-    * Git Repository URL: **https://github.com/hguerrero/3scale-api-workshop**
+    * Git Repository URL: **https://github.com/mgbarbero/3scale-api-workshop**
     * Git Repository context: **/projects/location-service**
     * Git Reference: **master**
 
