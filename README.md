@@ -26,6 +26,7 @@ A rough agenda for the workshop looks like this:
 API Design, Deployment and Management
 
 * [API Design](docs/labs/lab01/#lab-1) - Create an OpenAPI Specification-based Contract
+* [API Deployment](docs/labs/lab03/#lab-2) - Deploy the API to Openshift
 * [API Management](docs/labs/lab03/#lab-3) - Take Control of APIs
 
 API Security and Usage
