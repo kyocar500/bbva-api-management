@@ -33,7 +33,7 @@
     {
       "name": "CONTEXT_DIR",
       "displayName": "Git Repository context",
-      "value": "/",
+      "value": "/projects/location-service",
       "description": "Path within Git project to build; empty for root project directory."
     },
     {
