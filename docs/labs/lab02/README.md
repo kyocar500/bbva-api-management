@@ -38,6 +38,8 @@ Red Hat OpenShift is one of the leading container management platforms available
 
 1. The image name you should deploy is **registry.access.redhat.com/rhscl/mysql-57-rhel7**.
 
+1. In the field name write **mysql**
+
 1. Fill the following env vars for the database
 
     * MYSQL_USER: **dbuser**
