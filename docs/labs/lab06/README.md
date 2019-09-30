@@ -58,7 +58,7 @@ International Inc web development create a Node.js application for the company h
 
 1. From your overview page, click the white space next to the **web** link to expand the deployment information.
 
-1. Scroll down and click in the **www** link in the *BUILDS* section.
+1. Scroll down and click in the **web** link in the *BUILDS* section.
 
     ![10-builds](images/deploy-10.png "Builds")
 
