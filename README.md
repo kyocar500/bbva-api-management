@@ -32,5 +32,5 @@ API Design, Deployment and Management
 API Security and Usage
 
 * [API Developers](docs/labs/lab05/#lab-5) - Discovering APIs from Developer Portal
-
+* [API Consumption](docs/labs/lab06/#lab-6) - Connect Applications and APIs
 
