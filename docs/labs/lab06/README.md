@@ -56,13 +56,7 @@ International Inc web development create a Node.js application for the company h
   
 1. Your service will be provisioned in a moment. Click the **Continue to the project overview** link.
 
-    ![08-template-results](images/consume-11.png "Results")
-
-    _If you clicked the **Close** button, click **Overview** in the left side menu to review the deployment status_.
-
-1. From your overview page, click the white space next to the **www** link to expand the deployment information.
-
-    ![09-deployment-config](images/deploy-09.png "Deployment Config")
+1. From your overview page, click the white space next to the **web** link to expand the deployment information.
 
 1. Scroll down and click in the **www** link in the *BUILDS* section.
 
