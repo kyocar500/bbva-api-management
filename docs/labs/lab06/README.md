@@ -52,8 +52,6 @@ International Inc web development create a Node.js application for the company h
     * Application Name: **web**
     * Git Repository URL: **https://github.com/YOUR_REPO/3scaleworkshop-ui**
 
-    ![06-template-configuration](images/consume-10.png "Configuration")
-
 1. Click **Create**.
   
 1. Your service will be provisioned in a moment. Click the **Continue to the project overview** link.
