@@ -49,6 +49,7 @@ International Inc web development create a Node.js application for the company h
 
 1. Fill in the configuration information with your API implementation github repo details:
 
+    * Version: **8**
     * Application Name: **web**
     * Git Repository URL: **https://github.com/YOUR_REPO/3scaleworkshop-ui**
 
